@@ -1,9 +1,7 @@
-# Template :pineapple:
-
-This is a template to start new projects.
+# Yahtzee :game_die:
 
 ```bash
-git clone git@github.com:angelajholden/template.git
+git clone git@github.com:angelajholden/yahtzee.git
 
 npm install
 ```
