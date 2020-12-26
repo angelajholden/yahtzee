@@ -34,9 +34,9 @@ a {
 }
 
 .screen-reader-text {
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    width: 2px;
+    height: 2px;
+    margin: -2px;
     clip: rect(0, 0, 0, 0);
 }
 
@@ -50,7 +50,7 @@ footer {
 }
 
 main {
-    max-width: 555px;
+    max-width: 1024px;
     margin: 0 auto;
 
     p {
@@ -69,5 +69,55 @@ code {
 
     pre {
         margin: 0.5rem 0;
+    }
+}
+
+table {
+    width: 100%;
+    line-height: 1.333;
+    border-collapse: collapse;
+
+    thead {
+        th {
+            text-transform: uppercase;
+            text-align: left;
+            letter-spacing: 1px;
+            padding: 15px 10px;
+            background-color: $white;
+            border: 2px solid slategray;
+            border-top: 2px solid $white;
+            border-bottom: 2px solid $white;
+            color: slategray;
+
+            &:nth-of-type(1) {
+                border-left: 2px solid $white;
+                width: 20%;
+            }
+
+            &:nth-of-type(2) {
+                text-align: center;
+                width: 20%;
+            }
+
+            &:last-of-type {
+                border-right: 2px solid $white;
+            }
+        }
+    }
+
+    tbody {
+        th {
+            text-align: left;
+        }
+
+        th,
+        td {
+            border: 2px solid $white;
+            padding: 10px;
+        }
+
+        td {
+            text-align: center;
+        }
     }
 }
